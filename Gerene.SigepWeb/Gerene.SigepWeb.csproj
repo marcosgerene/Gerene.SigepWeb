@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Connected Services\Microsoft WCF Web Service Reference Provider\**" />
+    <Compile Remove="OpenAPIs\**" />
+    <EmbeddedResource Remove="Connected Services\Microsoft WCF Web Service Reference Provider\**" />
+    <EmbeddedResource Remove="OpenAPIs\**" />
+    <None Remove="Connected Services\Microsoft WCF Web Service Reference Provider\**" />
+    <None Remove="OpenAPIs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="WebService\RequestClasses\GetStatusPlpRequestcs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ACBr.Net.DFe.Core" Version="1.2.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+  </ItemGroup>
+
+</Project>
