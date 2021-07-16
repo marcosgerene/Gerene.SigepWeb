@@ -10,7 +10,7 @@ namespace Gerene.SigepWeb.Classes
 {
     public sealed class ServicoSigep : DFeDocument<ServicoSigep>
     {
-        [DFeElement("categoriaServico")]
+        [DFeElement(TipoCampo.Enum, "categoriaServico")]
         public CategoriaServico CategoriaServico { get; set; }
 
         [DFeElement("chancela")]

@@ -13,8 +13,8 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Enum, "ativo")]
         public SimNao Ativo { get; set; }
 
-        [DFeElement(TipoCampo.De10, "chancela")]
-        public decimal Chancela  {get; set;}
+        [DFeElement(TipoCampo.Str, "chancela")]
+        public string Chancela  {get; set;}
 
         [DFeElement(TipoCampo.DatHorTz, "dataAtualizacao")]
         public DateTimeOffset DataAtualizacao { get; set; }

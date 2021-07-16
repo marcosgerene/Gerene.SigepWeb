@@ -2,6 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 using System.ComponentModel;
+using ACBr.Net.DFe.Core.Attributes;
 
 namespace Gerene.SigepWeb.Classes
 {
@@ -13,9 +14,9 @@ namespace Gerene.SigepWeb.Classes
 
     public enum TipoGerente
     {
-        [Description("GerenteConta")] 
+        [DFeEnum("GerenteConta")] 
         GerenteConta = 0,
-        [Description("GerenteContaMaster")] 
+        [DFeEnum("GerenteContaMaster")] 
         GerenteContaMaster = 1,
     }
 
@@ -27,17 +28,17 @@ namespace Gerene.SigepWeb.Classes
 
     public enum CategoriaServico
     {
-        [Description("SEM_CATEGORIA")]
+        [DFeEnum("SEM_CATEGORIA")]
         Sem_Categoria = 0,
-        [Description("PAC")]
+        [DFeEnum("PAC")]
         Pac = 1,
-        [Description("SEDEX")]
+        [DFeEnum("SEDEX")]
         Sedex = 2,
-        [Description("CARTA")]
+        [DFeEnum("CARTA")]
         Carta = 3,
-        [Description("GRANDES_FORMATOS")]
+        [DFeEnum("GRANDES_FORMATOS")]
         Grandes_Formatos = 4,
-        [Description("REVERSO")]
+        [DFeEnum("REVERSO")]
         Reverso = 5,
     }
 
@@ -56,13 +57,13 @@ namespace Gerene.SigepWeb.Classes
 
     public enum StatusObjetoPostal
     {
-        [Description("EmBranco")]
+        [DFeEnum("EmBranco")]
         EmBranco = 0,
-        [Description("Postado")]
+        [DFeEnum("Postado")]
         Postado = 1,
-        [Description("Cancelado")]
+        [DFeEnum("Cancelado")]
         Cancelado = 8,
-        [Description("Estorno")]
+        [DFeEnum("Estorno")]
         Estorno = 9
     }
 
@@ -84,27 +85,27 @@ namespace Gerene.SigepWeb.Classes
 
     public enum TipoBloqueio
     {
-        [Description("FRAUDE_BLOQUEIO")]
+        [DFeEnum("FRAUDE_BLOQUEIO")]
         Fraude_Bloqueio = 0,
-        [Description("EXTRAVIO_VAREJO_PRE_INDENIZADO")]
+        [DFeEnum("EXTRAVIO_VAREJO_PRE_INDENIZADO")]
         Extravio_Varejo_Pre_Indenizado = 1,
-        [Description("EXTRAVIO_VAREJO_POS_INDENIZADO")]
+        [DFeEnum("EXTRAVIO_VAREJO_POS_INDENIZADO")]
         Extravio_Varejo_Pos_Indenizado = 2,
-        [Description("EXTRAVIO_CORPORATIVO")]
+        [DFeEnum("EXTRAVIO_CORPORATIVO")]
         Extravio_Corporativo = 3,
-        [Description("INTERNACIONAL_LDI")]
+        [DFeEnum("INTERNACIONAL_LDI")]
         Internacional_Ldi = 4,
     } 
 
     public enum Acao
     {
-        [Description("DEVOLVIDO_AO_REMETENTE")]
+        [DFeEnum("DEVOLVIDO_AO_REMETENTE")]
         Devolvido_Ao_Remetente = 0,
-        [Description("ENCAMINHADO_PARA_REFUGO")]
+        [DFeEnum("ENCAMINHADO_PARA_REFUGO")]
         Encaminhado_Para_Refugo = 1,
-        [Description("REINTEGRADO_E_DEVOLVIDO_AO_REMETENTE")]
+        [DFeEnum("REINTEGRADO_E_DEVOLVIDO_AO_REMETENTE")]
         Reintegrado_E_Devolvido_Ao_Remetente = 2,
-        [Description("DESBLOQUEADO")]
+        [DFeEnum("DESBLOQUEADO")]
         Desbloqueado = 3,
     }
 

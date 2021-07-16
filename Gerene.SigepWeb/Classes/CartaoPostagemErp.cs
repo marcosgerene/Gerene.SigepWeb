@@ -46,8 +46,8 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "numero")]
         public string Numero { get; set; }
 
-        [DFeElement("servicos")]
-        public ServicoErp Servicos { get; set; }
+        [DFeCollection("servicos")]
+        public List<ServicoErp> Servicos { get; set; }
 
         [DFeElement(TipoCampo.Str, "statusCartaoPostagem")]
         public string StatusCartaoPostagem { get; set; }
