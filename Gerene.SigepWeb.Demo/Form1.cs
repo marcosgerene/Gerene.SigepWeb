@@ -343,7 +343,7 @@ namespace Gerene.SigepWeb.Demo
                     XmlPlp = xml,
                     IdPlpCliente = idplpcliente,
                     CartaoPostagem = cartaopostagem,
-                    ListaEtiquetas = listaetiquetas
+                    //ListaEtiquetas = listaetiquetas
                 };
 
                 _ = client.FechaPlpVariosServicos(request);

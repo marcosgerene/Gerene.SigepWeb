@@ -18,11 +18,11 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "codigo_servico_postagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 3)]
         public string CodigoServicoPostagem { get; set; }
 
-        [DFeElement(TipoCampo.Str, "cubagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 4)]
-        public string Cubagem { get; set; }
+        [DFeElement(TipoCampo.De2, "cubagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 4)]
+        public decimal? Cubagem { get; set; }
 
-        [DFeElement(TipoCampo.Str, "peso", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
-        public string Peso { get; set; }
+        [DFeElement(TipoCampo.StrNumber, "peso", Min = 5, Max = 5, Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
+        public int Peso { get; set; }
 
         [DFeElement(TipoCampo.Str, "rt1", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 6)]
         public string Rt1 { get; set; }
@@ -39,7 +39,7 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement("nacional", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 10)]
         public NacionalLog Nacional { get; set; }
 
-        [DFeElement( "servico_adicional", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 11)]
+        [DFeElement("servico_adicional", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 11)]
         public ServicoAdicionalLog ServicoAdicional { get; set; }
 
         [DFeElement("dimensao_objeto", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 12)]

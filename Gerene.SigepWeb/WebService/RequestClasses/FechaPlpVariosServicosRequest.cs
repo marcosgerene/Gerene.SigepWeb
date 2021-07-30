@@ -1,6 +1,8 @@
 ﻿using ACBr.Net.DFe.Core.Attributes;
+using ACBr.Net.DFe.Core.Common;
 using ACBr.Net.DFe.Core.Serializer;
 using Gerene.SigepWeb.Classes;
+using System.Collections.Generic;
 
 namespace Gerene.SigepWeb.WebService.RequestClasses
 {
@@ -10,17 +12,17 @@ namespace Gerene.SigepWeb.WebService.RequestClasses
         public FechaPlpVariosServicosRequest(Client client) : base(client)
         {
         }
-        
-        [DFeIgnore]        
+
+        [DFeIgnore]
         public CorreiosLog ListaPlps { get; set; }
 
         /// <summary>
         /// Xml dos PLPs que serão enviados, formatado em CData. Será serializado o objeto ListaPlps
         /// </summary>
         [DFeElement(TipoCampo.Str, "xml", UseCData = true)]
-        public string XmlPlp 
+        public string XmlPlp
         {
-            get => ListaPlps.GetXml();
+            get => ListaPlps.GetXml(DFeSaveOptions.DisableFormatting | DFeSaveOptions.OmitDeclaration | DFeSaveOptions.RemoveSpaces);
             set
             {
                 if (string.IsNullOrEmpty(value))
@@ -37,8 +39,8 @@ namespace Gerene.SigepWeb.WebService.RequestClasses
         [DFeElement(TipoCampo.Str, "cartaoPostagem")]
         public string CartaoPostagem { get; set; }
 
-        [DFeElement(TipoCampo.Str, "listaEtiquetas")]
-        public string ListaEtiquetas { get; set; }
+        [DFeCollection(TipoCampo.Str, "listaEtiquetas")]
+        public List<string> ListaEtiquetas { get; set; }
 
     }
 }

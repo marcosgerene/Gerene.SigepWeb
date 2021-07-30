@@ -9,16 +9,16 @@ namespace Gerene.SigepWeb.Classes
 {
     public sealed class PlpLog : DFeDocument<PlpLog>
     {
-        [DFeElement(TipoCampo.Str, "id_plp", Ordem = 1)]
+        [DFeElement(TipoCampo.Str, "id_plp", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 1)]
         public string IdPlp { get; set; }
 
-        [DFeElement(TipoCampo.Str, "valor_global", Ordem = 2)]
+        [DFeElement(TipoCampo.Str, "valor_global", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 2)]
         public string ValorGlobal { get; set; }
 
-        [DFeElement(TipoCampo.Str, "mcu_unidade_postagem", Ordem = 3)]
+        [DFeElement(TipoCampo.Str, "mcu_unidade_postagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 3)]
         public string McuUnidadePostagem { get; set; }
 
-        [DFeElement(TipoCampo.Str, "nome_unidade_postagem", Ordem = 4)]
+        [DFeElement(TipoCampo.Str, "nome_unidade_postagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 4)]
         public string NomeUnidadePostagem { get; set; }
 
         [DFeElement(TipoCampo.Str, "cartao_postagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
