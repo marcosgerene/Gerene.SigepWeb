@@ -21,7 +21,7 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.De2, "cubagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 4)]
         public decimal? Cubagem { get; set; }
 
-        [DFeElement(TipoCampo.StrNumber, "peso", Min = 5, Max = 5, Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
+        [DFeElement(TipoCampo.Int, "peso", Min = 5, Max = 5, Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
         public int Peso { get; set; }
 
         [DFeElement(TipoCampo.Str, "rt1", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 6)]
