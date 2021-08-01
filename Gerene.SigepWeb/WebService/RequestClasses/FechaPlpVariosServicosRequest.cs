@@ -12,26 +12,26 @@ namespace Gerene.SigepWeb.WebService.RequestClasses
         public FechaPlpVariosServicosRequest(Client client) : base(client)
         {
         }
-
-        [DFeIgnore]
+       
+        [DFeElement("xml")]
         public CorreiosLog ListaPlps { get; set; }
 
         /// <summary>
         /// Xml dos PLPs que serão enviados, formatado em CData. Será serializado o objeto ListaPlps
         /// </summary>
-        [DFeElement(TipoCampo.Str, "xml", UseCData = true)]
-        public string XmlPlp
-        {
-            get => ListaPlps.GetXml(DFeSaveOptions.DisableFormatting | DFeSaveOptions.OmitDeclaration | DFeSaveOptions.RemoveSpaces);
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    ListaPlps = null;
+        //[DFeElement(TipoCampo.Str, "xml")]
+        //public string XmlPlp
+        //{
+        //    get => ListaPlps.GetXml(DFeSaveOptions.DisableFormatting | DFeSaveOptions.OmitDeclaration | DFeSaveOptions.RemoveSpaces);
+        //    set
+        //    {
+        //        if (string.IsNullOrEmpty(value))
+        //            ListaPlps = null;
 
-                else
-                    ListaPlps = CorreiosLog.Load(value);
-            }
-        }
+        //        else
+        //            ListaPlps = CorreiosLog.Load(value);
+        //    }
+        //}
 
         [DFeElement(TipoCampo.Int, "idPlpCliente")]
         public string IdPlpCliente { get; set; }
