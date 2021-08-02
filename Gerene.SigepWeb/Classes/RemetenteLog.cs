@@ -27,7 +27,7 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "numero_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 6)]
         public string Numero { get; set; }
 
-        [DFeElement(TipoCampo.Str, "complemento_remetente", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 7)]
+        [DFeElement(TipoCampo.Str, "complemento_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 7)]
         public string Complemento { get; set; }
 
         [DFeElement(TipoCampo.Str, "bairro_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 8)]
@@ -42,19 +42,19 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "uf_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 11)]
         public string Uf { get; set; }
 
-        [DFeElement(TipoCampo.Str, "telefone_remetente", Ocorrencia = Ocorrencia.NaoObrigatoria, UseCData = true, Ordem = 12)]
+        [DFeElement(TipoCampo.Str, "telefone_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 12)]
         public string Telefone { get; set; }
 
-        [DFeElement(TipoCampo.Str, "fax_remetente", Ocorrencia = Ocorrencia.NaoObrigatoria, UseCData = true, Ordem = 13)]
+        [DFeElement(TipoCampo.Str, "fax_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 13)]
         public string Fax { get; set; }
 
-        [DFeElement(TipoCampo.Str, "email_remetente", Ocorrencia = Ocorrencia.NaoObrigatoria, UseCData = true, Ordem = 14)]
+        [DFeElement(TipoCampo.Str, "email_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 14)]
         public string Email { get; set; }
 
-        [DFeElement(TipoCampo.Str, "celular_remetente", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 15)]
+        [DFeElement(TipoCampo.Str, "celular_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 15)]
         public string Celular { get; set; }
 
-        [DFeElement(TipoCampo.Str, "cpf_cnpj_remetente", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 16)]
+        [DFeElement(TipoCampo.Str, "cpf_cnpj_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 16)]
         public string CpfCnpj { get; set; }
 
         [DFeElement(TipoCampo.Str, "ciencia_conteudo_proibido", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 17)]

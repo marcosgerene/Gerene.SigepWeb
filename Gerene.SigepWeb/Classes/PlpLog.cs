@@ -1,9 +1,6 @@
 ﻿using ACBr.Net.DFe.Core.Attributes;
 using ACBr.Net.DFe.Core.Document;
 using ACBr.Net.DFe.Core.Serializer;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gerene.SigepWeb.Classes
 {
@@ -22,7 +19,15 @@ namespace Gerene.SigepWeb.Classes
         public string NomeUnidadePostagem { get; set; }
 
         [DFeElement(TipoCampo.Str, "cartao_postagem", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
-        public string CartaoPostagem { get; set; } 
-        
+        public string CartaoPostagem { get; set; }
+
+        public PlpLog()
+        {
+            IdPlp = string.Empty;
+            ValorGlobal = string.Empty;
+            McuUnidadePostagem = string.Empty;
+            NomeUnidadePostagem = string.Empty;
+            CartaoPostagem = string.Empty;
+        }
     } 
 }

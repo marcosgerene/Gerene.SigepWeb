@@ -21,25 +21,25 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "cep_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 4)]
         public string Cep { get; set; }
 
-        [DFeElement(TipoCampo.Str, "codigo_usuario_postal", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 5)]
+        [DFeElement(TipoCampo.Str, "codigo_usuario_postal", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
         public string CodigoUsuarioPostal { get; set; }
 
-        [DFeElement(TipoCampo.Str, "centro_custo_cliente", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 6)]
+        [DFeElement(TipoCampo.Str, "centro_custo_cliente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 6)]
         public string CentroCustoCliente { get; set; }
 
         [DFeElement(TipoCampo.Str, "numero_nota_fiscal", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 7)]
         public string NumeroNotaFiscal { get; set; }
 
-        [DFeElement(TipoCampo.Str, "serie_nota_fiscal", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 8)]
+        [DFeElement(TipoCampo.Str, "serie_nota_fiscal", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 8)]
         public string SerieNotaFiscal { get; set; }
 
-        [DFeElement(TipoCampo.Str, "valor_nota_fiscal", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 9)]
+        [DFeElement(TipoCampo.Str, "valor_nota_fiscal", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 9)]
         public string ValorNotaFiscal { get; set; }
 
         [DFeElement(TipoCampo.Str, "natureza_nota_fiscal", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 10)]
         public string NaturezaNotaFiscal { get; set; }
 
-        [DFeElement(TipoCampo.Str, "descricao_objeto", Ocorrencia = Ocorrencia.NaoObrigatoria, UseCData = true, Ordem = 11)]
+        [DFeElement(TipoCampo.Str, "descricao_objeto", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 11)]
         public string DescricaoObjeto { get; set; }
 
         [DFeElement(TipoCampo.Str, "valor_a_cobrar", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 12)]
