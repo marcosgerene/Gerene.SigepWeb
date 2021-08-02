@@ -1,4 +1,5 @@
 ﻿using ACBr.Net.DFe.Core.Attributes;
+using ACBr.Net.DFe.Core.Common;
 using ACBr.Net.DFe.Core.Serializer;
 using Gerene.SigepWeb.Classes;
 
@@ -17,14 +18,19 @@ namespace Gerene.SigepWeb.WebService.RequestClasses
         [DFeElement(TipoCampo.Str, "xml", UseCData = true)]
         public string XmlPlp
         {
-            get => ListaPlps.GetXml();
+            get => $"<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?>{ListaPlps.GetXml(DFeSaveOptions.OmitDeclaration | DFeSaveOptions.DisableFormatting | DFeSaveOptions.RemoveSpaces)}";
             set
             {
                 if (string.IsNullOrEmpty(value))
                     ListaPlps = null;
 
                 else
+                {
+                    if (value.StartsWith(@"<?xml"))
+                        value = value.Substring(value.IndexOf("<correioslog"));
+
                     ListaPlps = CorreiosLog.Load(value);
+                }
             }
         }
 

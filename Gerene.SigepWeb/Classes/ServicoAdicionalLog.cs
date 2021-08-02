@@ -15,7 +15,7 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.De2, "valor_declarado", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 2)]
         public decimal ValorDeclarado { get; set; }
 
-        [DFeElement(TipoCampo.Str, "endereco_vizinho", Ocorrencia = Ocorrencia.NaoObrigatoria, UseCData = true, Ordem = 3)]
+        [DFeElement(TipoCampo.Str, "endereco_vizinho", Ocorrencia = Ocorrencia.NaoObrigatoria, Ordem = 3)]
         public string EnderecoVizinho { get; set; }
     }
 }

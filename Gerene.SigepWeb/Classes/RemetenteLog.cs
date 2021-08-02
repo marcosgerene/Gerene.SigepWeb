@@ -18,10 +18,10 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "codigo_administrativo", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 3)]
         public string CodigoAdministrativo { get; set; }
 
-        [DFeElement(TipoCampo.Str, "nome_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 4)]
+        [DFeElement(TipoCampo.Str, "nome_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 4)]
         public string Nome { get; set; }
 
-        [DFeElement(TipoCampo.Str, "logradouro_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 5)]
+        [DFeElement(TipoCampo.Str, "logradouro_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
         public string Logradouro { get; set; }
 
         [DFeElement(TipoCampo.Str, "numero_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 6)]
@@ -30,25 +30,25 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "complemento_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 7)]
         public string Complemento { get; set; }
 
-        [DFeElement(TipoCampo.Str, "bairro_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 8)]
+        [DFeElement(TipoCampo.Str, "bairro_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 8)]
         public string Bairro { get; set; }
 
-        [DFeElement(TipoCampo.Str, "cep_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 9)]
+        [DFeElement(TipoCampo.Str, "cep_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 9)]
         public string Cep { get; set; }
 
-        [DFeElement(TipoCampo.Str, "cidade_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 10)]
+        [DFeElement(TipoCampo.Str, "cidade_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 10)]
         public string Cidade { get; set; }
 
         [DFeElement(TipoCampo.Str, "uf_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 11)]
         public string Uf { get; set; }
 
-        [DFeElement(TipoCampo.Str, "telefone_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 12)]
+        [DFeElement(TipoCampo.Str, "telefone_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 12)]
         public string Telefone { get; set; }
 
-        [DFeElement(TipoCampo.Str, "fax_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 13)]
+        [DFeElement(TipoCampo.Str, "fax_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 13)]
         public string Fax { get; set; }
 
-        [DFeElement(TipoCampo.Str, "email_remetente", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 14)]
+        [DFeElement(TipoCampo.Str, "email_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 14)]
         public string Email { get; set; }
 
         [DFeElement(TipoCampo.Str, "celular_remetente", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 15)]

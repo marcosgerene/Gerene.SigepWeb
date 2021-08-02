@@ -9,16 +9,16 @@ namespace Gerene.SigepWeb.Classes
 {
     public sealed class NacionalLog : DFeDocument<NacionalLog>
     {
-        [DFeElement(TipoCampo.Str, "bairro_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 1)]
+        [DFeElement(TipoCampo.Str, "bairro_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 1)]
         public string Bairro { get; set; }
         
-        [DFeElement(TipoCampo.Str, "cidade_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 2)]
+        [DFeElement(TipoCampo.Str, "cidade_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 2)]
         public string Cidade { get; set; }
 
         [DFeElement(TipoCampo.Str, "uf_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 3)]
         public string Uf { get; set; }
 
-        [DFeElement(TipoCampo.Str, "cep_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 4)]
+        [DFeElement(TipoCampo.Str, "cep_destinatario", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 4)]
         public string Cep { get; set; }
 
         [DFeElement(TipoCampo.Str, "codigo_usuario_postal", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 5)]
@@ -39,7 +39,7 @@ namespace Gerene.SigepWeb.Classes
         [DFeElement(TipoCampo.Str, "natureza_nota_fiscal", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 10)]
         public string NaturezaNotaFiscal { get; set; }
 
-        [DFeElement(TipoCampo.Str, "descricao_objeto", Ocorrencia = Ocorrencia.Obrigatoria, UseCData = true, Ordem = 11)]
+        [DFeElement(TipoCampo.Str, "descricao_objeto", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 11)]
         public string DescricaoObjeto { get; set; }
 
         [DFeElement(TipoCampo.Str, "valor_a_cobrar", Ocorrencia = Ocorrencia.Obrigatoria, Ordem = 12)]

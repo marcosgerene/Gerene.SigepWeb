@@ -12,28 +12,30 @@ namespace Gerene.SigepWeb.WebService.RequestClasses
         public FechaPlpVariosServicosRequest(Client client) : base(client)
         {
         }
-       
-        [DFeElement("xml")]
+
+        [DFeIgnore]
         public CorreiosLog ListaPlps { get; set; }
 
-        /// <summary>
-        /// Xml dos PLPs que serão enviados, formatado em CData. Será serializado o objeto ListaPlps
-        /// </summary>
-        //[DFeElement(TipoCampo.Str, "xml")]
-        //public string XmlPlp
-        //{
-        //    get => ListaPlps.GetXml(DFeSaveOptions.DisableFormatting | DFeSaveOptions.OmitDeclaration | DFeSaveOptions.RemoveSpaces);
-        //    set
-        //    {
-        //        if (string.IsNullOrEmpty(value))
-        //            ListaPlps = null;
+        [DFeElement(TipoCampo.Str, "xml", UseCData = true)]
+        public string XmlPlp
+        {
+            get => $"<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?>{ListaPlps.GetXml(DFeSaveOptions.OmitDeclaration | DFeSaveOptions.DisableFormatting | DFeSaveOptions.RemoveSpaces)}";
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    ListaPlps = null;
 
-        //        else
-        //            ListaPlps = CorreiosLog.Load(value);
-        //    }
-        //}
+                else
+                {
+                    if (value.StartsWith(@"<?xml"))
+                        value = value.Substring(value.IndexOf("<correioslog"));
 
-        [DFeElement(TipoCampo.Int, "idPlpCliente")]
+                    ListaPlps = CorreiosLog.Load(value);
+                }
+            }
+        }
+
+        [DFeElement(TipoCampo.Str, "idPlpCliente")]
         public string IdPlpCliente { get; set; }
 
         [DFeElement(TipoCampo.Str, "cartaoPostagem")]

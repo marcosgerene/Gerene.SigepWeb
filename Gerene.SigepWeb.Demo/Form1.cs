@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -343,7 +344,7 @@ namespace Gerene.SigepWeb.Demo
                     XmlPlp = xml,
                     IdPlpCliente = idplpcliente,
                     CartaoPostagem = cartaopostagem,
-                    //ListaEtiquetas = listaetiquetas
+                    ListaEtiquetas = listaetiquetas.Split(",").ToList()
                 };
 
                 _ = client.FechaPlpVariosServicos(request);

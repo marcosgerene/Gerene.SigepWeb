@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerene.SigepWeb", "Gerene.SigepWeb\Gerene.SigepWeb.csproj", "{8445DB7F-3B16-4E97-891A-C2FFCFDC77B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gerene.SigepWeb", "Gerene.SigepWeb\Gerene.SigepWeb.csproj", "{8445DB7F-3B16-4E97-891A-C2FFCFDC77B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerene.SigepWeb.Demo", "Gerene.SigepWeb.Demo\Gerene.SigepWeb.Demo.csproj", "{C1964B37-7AD8-41A1-9113-CA1630C3B82A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gerene.SigepWeb.Demo", "Gerene.SigepWeb.Demo\Gerene.SigepWeb.Demo.csproj", "{C1964B37-7AD8-41A1-9113-CA1630C3B82A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
