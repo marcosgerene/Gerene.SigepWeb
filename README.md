@@ -12,4 +12,4 @@ Antes de iniciar
 
 Outras informações
 -----
-Esse projeto usa como base o projeto ACBr.DFe.Core a serialização dos XMLs e consumo do WebService.
+Esse projeto usa como base o projeto OpenAC.DFe.Core a serialização dos XMLs e consumo do WebService.
