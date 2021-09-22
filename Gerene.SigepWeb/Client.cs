@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-using ACBr.Net.DFe.Core.Extensions;
-using ACBr.Net.Core.Extensions;
+using OpenAC.Net.DFe.Core.Extensions;
+using OpenAC.Net.Core.Extensions;
 using System.IO;
-using ACBr.Net.DFe.Core.Document;
+using OpenAC.Net.DFe.Core.Document;
 using Gerene.SigepWeb.WebService.RequestClasses;
 using Gerene.SigepWeb.WebService.ResponseClasses;
 
@@ -421,7 +421,7 @@ namespace Gerene.SigepWeb
 
         private void Executar<TDocument>(string metodo, DFeDocument<TDocument> request) where TDocument : class
         {
-            var saveOptions = ACBr.Net.DFe.Core.Common.DFeSaveOptions.DisableFormatting | ACBr.Net.DFe.Core.Common.DFeSaveOptions.OmitDeclaration | ACBr.Net.DFe.Core.Common.DFeSaveOptions.RemoveSpaces;
+            var saveOptions = OpenAC.Net.DFe.Core.Common.DFeSaveOptions.DisableFormatting | OpenAC.Net.DFe.Core.Common.DFeSaveOptions.OmitDeclaration | OpenAC.Net.DFe.Core.Common.DFeSaveOptions.RemoveSpaces;
             string xml = request.GetXml(saveOptions).ToString();
 
             XmlEnvio = xml;

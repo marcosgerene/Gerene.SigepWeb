@@ -5,9 +5,9 @@ using System.ServiceModel.Channels;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
-using ACBr.Net.Core;
-using ACBr.Net.Core.Extensions;
-using ACBr.Net.DFe.Core;
+using OpenAC.Net.Core;
+using OpenAC.Net.Core.Extensions;
+using OpenAC.Net.DFe.Core;
 
 namespace Gerene.SigepWeb.WebService
 {
@@ -88,7 +88,7 @@ namespace Gerene.SigepWeb.WebService
                 XmlEnvio = message.ToString();
 
                 var ret = Channel.Request(message);
-                Guard.Against<ACBrDFeException>(ret == null, "Nenhum retorno do webservice.");
+                Guard.Against<OpenDFeException>(ret == null, "Nenhum retorno do webservice.");
                 var reader = ret.GetReaderAtBodyContents();
 
                 string soapResponse = reader.ReadOuterXml();
@@ -123,7 +123,7 @@ namespace Gerene.SigepWeb.WebService
             {
                 var exMessage = $"{element.ElementAnyNs("faultcode")?.GetValue<string>()} - " +
                                 $"{element.ElementAnyNs("faultstring")?.GetValue<string>()}";
-                throw new ACBrDFeCommunicationException(exMessage);
+                throw new OpenDFeCommunicationException(exMessage);
             }
 
             return xmlDocument.ToXmlDocument().OuterXml;

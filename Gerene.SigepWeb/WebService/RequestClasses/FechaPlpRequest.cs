@@ -1,6 +1,6 @@
-﻿using ACBr.Net.DFe.Core.Attributes;
-using ACBr.Net.DFe.Core.Common;
-using ACBr.Net.DFe.Core.Serializer;
+﻿using OpenAC.Net.DFe.Core.Attributes;
+using OpenAC.Net.DFe.Core.Common;
+using OpenAC.Net.DFe.Core.Serializer;
 using Gerene.SigepWeb.Classes;
 
 namespace Gerene.SigepWeb.WebService.RequestClasses

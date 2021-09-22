@@ -1,5 +1,5 @@
-﻿using ACBr.Net.DFe.Core.Attributes;
-using ACBr.Net.DFe.Core.Document;
+﻿using OpenAC.Net.DFe.Core.Attributes;
+using OpenAC.Net.DFe.Core.Document;
 
 namespace Gerene.SigepWeb.WebService.RequestClasses
 {

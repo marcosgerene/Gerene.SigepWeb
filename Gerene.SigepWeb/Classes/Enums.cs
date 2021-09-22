@@ -2,7 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 using System.ComponentModel;
-using ACBr.Net.DFe.Core.Attributes;
+using OpenAC.Net.DFe.Core.Attributes;
 
 namespace Gerene.SigepWeb.Classes
 {
